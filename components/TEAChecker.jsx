@@ -128,16 +128,17 @@ const TEAChecker = () => {
         </div>
       )}
 
-      <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}>
-        <GoogleMap
-          mapContainerStyle={containerStyle}
-          center={location || defaultCenter}
-          zoom={location ? 13 : 4}
-        >
-          {location && <Marker position={location} />}
-        </GoogleMap>
-      </LoadScript>
-    </div>
+     <div style={{ width: "100%", height: "500px", marginTop: "20px" }}>
+  <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}>
+    <GoogleMap
+      mapContainerStyle={{ width: "100%", height: "100%" }}
+      center={location || defaultCenter}
+      zoom={location ? 13 : 4}
+    >
+      {location && <Marker position={location} />}
+    </GoogleMap>
+        </LoadScript>
+       </div>
   );
 };
 
