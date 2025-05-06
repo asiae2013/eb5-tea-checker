@@ -19,7 +19,7 @@ const TEAChecker = () => {
 
   const handleSearch = async () => {
     if (!address) return;
-    const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
+    const apiKey = "AIzaSyD-r5_nz3dKDeq7308ur07U08GcUpRNHKI";
     setError("");
     setTractInfo(null);
 
@@ -129,7 +129,7 @@ const TEAChecker = () => {
       )}
 
      <div style={{ width: "100%", height: "500px", marginTop: "20px" }}>
-  <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}>
+  <LoadScript googleMapsApiKey={apiKey}>
     <GoogleMap
       mapContainerStyle={{ width: "100%", height: "100%" }}
       center={location || defaultCenter}
