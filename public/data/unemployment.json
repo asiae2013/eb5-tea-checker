@@ -1,0 +1,14 @@
+{
+  "11001006202": {
+    "state": "DC",
+    "county": "District of Columbia",
+    "unemploymentRate": 11.1,
+    "isTEA": true
+  },
+  "06037920100": {
+    "state": "CA",
+    "county": "Los Angeles",
+    "unemploymentRate": 9.2,
+    "isTEA": true
+  }
+}
